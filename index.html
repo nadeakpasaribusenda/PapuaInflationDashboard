@@ -26,28 +26,29 @@
 
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold text-primary" href="#">
+        <a class="navbar-brand fw-bold" href="#">
 
-            <i class="bi bi-graph-up-arrow"></i>
+            <i class="bi bi-bar-chart-fill text-primary"></i>
 
             SIPIPB
 
         </a>
 
         <button class="navbar-toggler"
+            type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#menuNavbar">
+            data-bs-target="#navbarMenu">
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
 
         <div class="collapse navbar-collapse"
-            id="menuNavbar">
+            id="navbarMenu">
 
             <ul class="navbar-nav ms-auto">
 
@@ -58,14 +59,20 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#fitur">
-                        Fitur
+                    <a class="nav-link" href="#tentang">
+                        Tentang Sistem
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#dashboard">
                         Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">
+                        Kontak
                     </a>
                 </li>
 
@@ -87,7 +94,7 @@
 
 <div class="col-lg-6">
 
-<span class="badge rounded-pill text-bg-primary mb-3">
+<span class="badge bg-primary mb-3">
 
 Sistem Informasi
 
@@ -95,20 +102,17 @@ Sistem Informasi
 
 <h1 class="display-4 fw-bold">
 
-Sistem Informasi
-
-Pemantauan Inflasi
-
-Papua Barat
+Sistem Informasi Pemantauan
+Inflasi Papua Barat
 
 </h1>
 
-<p class="lead mt-4">
+<p class="lead text-secondary mt-4">
 
-Menyajikan informasi harga komoditas strategis,
-kondisi distribusi, kapasitas gudang, serta analisis
-data untuk mendukung pengendalian inflasi
-di Papua Barat.
+Menyajikan informasi harga komoditas,
+kondisi distribusi, kapasitas gudang,
+serta analisis data sebagai pendukung
+pengendalian inflasi di Papua Barat.
 
 </p>
 
@@ -121,7 +125,7 @@ Lihat Dashboard
 
 </a>
 
-<a href="#fitur"
+<a href="#tentang"
 class="btn btn-outline-primary btn-lg ms-2">
 
 Pelajari Sistem
@@ -130,11 +134,76 @@ Pelajari Sistem
 
 </div>
 
+<div class="row mt-5">
+
+<div class="col-4">
+
+<div class="hero-card">
+
+<h3 id="metricInflasi">
+
+2,81%
+
+</h3>
+
+<p>
+
+Inflasi
+
+</p>
+
 </div>
 
-<div class="col-lg-6 text-center">
+</div>
 
-<img src="assets/images/dashboard-preview.png"
+<div class="col-4">
+
+<div class="hero-card">
+
+<h3 id="metricGudang">
+
+82%
+
+</h3>
+
+<p>
+
+Gudang
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-4">
+
+<div class="hero-card">
+
+<h3 id="metricDistribusi">
+
+24
+
+</h3>
+
+<p>
+
+Distribusi
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<img
+src="assets/images/dashboard-preview.png"
 class="img-fluid"
 alt="Dashboard">
 
@@ -146,9 +215,9 @@ alt="Dashboard">
 
 </section>
 
-<!-- ================= FITUR ================= -->
+<!-- ================= TENTANG SISTEM ================= -->
 
-<section id="fitur" class="py-5">
+<section id="tentang" class="py-5">
 
 <div class="container">
 
@@ -162,8 +231,9 @@ Mengapa Sistem Ini Dibuat?
 
 <p class="text-muted">
 
-Mendukung pemerintah daerah dalam memantau
-kondisi inflasi secara cepat dan terpadu.
+Membantu pemerintah daerah dalam memantau
+harga komoditas, distribusi, dan kondisi inflasi
+secara cepat dan terintegrasi.
 
 </p>
 
@@ -173,7 +243,7 @@ kondisi inflasi secara cepat dan terpadu.
 
 <div class="col-md-3">
 
-<div class="card h-100 shadow-sm border-0">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body text-center">
 
@@ -187,8 +257,8 @@ Pemantauan Harga
 
 <p>
 
-Memantau perubahan harga komoditas
-secara berkala.
+Memantau perubahan harga
+komoditas strategis.
 
 </p>
 
@@ -200,7 +270,7 @@ secara berkala.
 
 <div class="col-md-3">
 
-<div class="card h-100 shadow-sm border-0">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body text-center">
 
@@ -214,7 +284,7 @@ Distribusi
 
 <p>
 
-Memantau kelancaran distribusi
+Memantau proses distribusi
 antarwilayah.
 
 </p>
@@ -227,7 +297,7 @@ antarwilayah.
 
 <div class="col-md-3">
 
-<div class="card h-100 shadow-sm border-0">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body text-center">
 
@@ -241,8 +311,8 @@ Gudang
 
 <p>
 
-Menampilkan kapasitas dan stok
-komoditas strategis.
+Menampilkan stok dan
+kapasitas gudang.
 
 </p>
 
@@ -254,11 +324,11 @@ komoditas strategis.
 
 <div class="col-md-3">
 
-<div class="card h-100 shadow-sm border-0">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body text-center">
 
-<i class="bi bi-bar-chart-line fs-1 text-danger"></i>
+<i class="bi bi-graph-up-arrow fs-1 text-danger"></i>
 
 <h5 class="mt-3">
 
@@ -268,8 +338,8 @@ Analisis
 
 <p>
 
-Memberikan rekomendasi berdasarkan
-hasil analisis data.
+Memberikan rekomendasi
+berdasarkan data.
 
 </p>
 
@@ -287,44 +357,40 @@ hasil analisis data.
 
 <!-- ================= DASHBOARD ================= -->
 
-<section id="dashboard" class="container py-5">
+<section id="dashboard" class="py-5">
 
-<div class="mb-4">
+<div class="container">
 
-<h2 class="fw-bold">
+<h2 class="fw-bold mb-2">
 
-Ringkasan Kondisi Hari Ini
+Dashboard Pemantauan
 
 </h2>
 
-<p class="text-muted">
+<p class="text-muted mb-5">
 
-Data diperbarui secara berkala berdasarkan hasil pemantauan.
+Informasi kondisi inflasi dan komoditas secara terkini.
 
 </p>
 
-</div>
+<div class="row g-4">
+    <!-- ================= RINGKASAN ================= -->
 
-<div class="row g-3">
-    <!-- ================= KARTU RINGKASAN ================= -->
+<div class="col-lg-3 col-md-6">
 
-<div class="col-md-3">
-
-    <div class="card kartu-ringkasan h-100">
+    <div class="card border-0 shadow-sm h-100 ringkasan-card">
 
         <div class="card-body">
 
-            <div class="ikon-ringkasan bg-primary-subtle">
-
-                <i class="bi bi-graph-up-arrow"></i>
-
+            <div class="icon-box bg-primary-subtle mb-3">
+                <i class="bi bi-graph-up-arrow text-primary"></i>
             </div>
 
             <small class="text-muted">
                 Tingkat Inflasi
             </small>
 
-            <h2 id="metricInflasi">
+            <h2 id="metricInflasi" class="fw-bold mt-2">
                 2,81%
             </h2>
 
@@ -334,23 +400,21 @@ Data diperbarui secara berkala berdasarkan hasil pemantauan.
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
-    <div class="card kartu-ringkasan h-100">
+    <div class="card border-0 shadow-sm h-100 ringkasan-card">
 
         <div class="card-body">
 
-            <div class="ikon-ringkasan bg-success-subtle">
-
-                <i class="bi bi-box-seam"></i>
-
+            <div class="icon-box bg-success-subtle mb-3">
+                <i class="bi bi-box-seam text-success"></i>
             </div>
 
             <small class="text-muted">
                 Kapasitas Gudang
             </small>
 
-            <h2 id="metricGudang">
+            <h2 id="metricGudang" class="fw-bold mt-2">
                 82%
             </h2>
 
@@ -360,23 +424,21 @@ Data diperbarui secara berkala berdasarkan hasil pemantauan.
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
-    <div class="card kartu-ringkasan h-100">
+    <div class="card border-0 shadow-sm h-100 ringkasan-card">
 
         <div class="card-body">
 
-            <div class="ikon-ringkasan bg-warning-subtle">
-
-                <i class="bi bi-truck"></i>
-
+            <div class="icon-box bg-warning-subtle mb-3">
+                <i class="bi bi-truck text-warning"></i>
             </div>
 
             <small class="text-muted">
-                Distribusi Hari Ini
+                Distribusi
             </small>
 
-            <h2 id="metricDistribusi">
+            <h2 id="metricDistribusi" class="fw-bold mt-2">
                 24
             </h2>
 
@@ -386,23 +448,21 @@ Data diperbarui secara berkala berdasarkan hasil pemantauan.
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
-    <div class="card kartu-ringkasan h-100">
+    <div class="card border-0 shadow-sm h-100 ringkasan-card">
 
         <div class="card-body">
 
-            <div class="ikon-ringkasan bg-danger-subtle">
-
-                <i class="bi bi-exclamation-triangle"></i>
-
+            <div class="icon-box bg-danger-subtle mb-3">
+                <i class="bi bi-exclamation-triangle text-danger"></i>
             </div>
 
             <small class="text-muted">
                 Kondisi Inflasi
             </small>
 
-            <h2 class="text-warning" id="metricStatus">
+            <h2 id="metricStatus" class="fw-bold text-warning mt-2">
                 Waspada
             </h2>
 
@@ -414,40 +474,45 @@ Data diperbarui secara berkala berdasarkan hasil pemantauan.
 
 </div>
 
-<!-- ================= GRAFIK + PETA ================= -->
+<!-- ================= GRAFIK ================= -->
 
 <div class="row mt-5">
 
 <div class="col-lg-8">
 
-<div class="card shadow-sm border-0">
+<div class="card border-0 shadow-sm">
 
-<div class="card-body">
+<div class="card-body p-4">
 
-<h4 class="mb-4">
+<h4 class="fw-bold mb-3">
 
-Pergerakan Harga Komoditas
+Pergerakan Harga Beras
 
 </h4>
 
-<svg viewBox="0 0 300 100" class="chart-svg">
+<p class="text-muted">
+
+Visualisasi perubahan harga selama
+30 hari terakhir.
+
+</p>
+
+<svg viewBox="0 0 300 100"
+class="chart-svg">
 
 <polyline
+
 points="0,70 40,65 80,55 120,60 160,40 200,45 240,25 280,30"
+
 class="line-actual"/>
 
 <polyline
+
 points="200,45 240,25 280,30 300,20"
+
 class="line-prediksi"/>
 
 </svg>
-
-<p class="mt-3 text-muted">
-
-Garis biru menunjukkan data aktual,
-sedangkan garis merah menunjukkan hasil analisis.
-
-</p>
 
 </div>
 
@@ -457,21 +522,26 @@ sedangkan garis merah menunjukkan hasil analisis.
 
 <div class="col-lg-4">
 
-<div class="card shadow-sm border-0 h-100">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body">
 
-<h4>
+<h4 class="fw-bold mb-3">
 
-Wilayah Pemantauan
+Sebaran Gudang
 
 </h4>
 
-<img
-src="assets/images/papua-barat.png"
-class="img-fluid my-3">
+<p class="text-muted">
 
-<div id="wilayahList"
+Wilayah yang dipantau.
+
+</p>
+
+<div
+
+id="wilayahList"
+
 class="d-flex flex-wrap gap-2">
 
 </div>
@@ -490,19 +560,28 @@ class="d-flex flex-wrap gap-2">
 
 <div class="col-lg-7">
 
-<div class="card shadow-sm border-0 h-100">
+<div class="card border-0 shadow-sm">
 
 <div class="card-body">
 
-<h4>
+<h4 class="fw-bold">
 
 Peringatan Dini
 
 </h4>
 
+<p class="text-muted">
+
+Informasi yang perlu segera
+mendapat perhatian.
+
+</p>
+
 <div
+
 id="warningList"
-class="list-group list-group-flush mt-3">
+
+class="list-group list-group-flush">
 
 </div>
 
@@ -514,30 +593,33 @@ class="list-group list-group-flush mt-3">
 
 <div class="col-lg-5">
 
-<div class="card shadow-sm border-0 h-100">
+<div class="card border-0 shadow-sm h-100">
 
 <div class="card-body">
 
-<h4>
+<h4 class="fw-bold">
 
 Rekomendasi Sistem
 
 </h4>
 
 <p
+
 id="rekomendasiText"
+
 class="mt-3">
 
 Redistribusi stok beras dari wilayah
-dengan persediaan tinggi menuju
-wilayah yang mengalami peningkatan
-permintaan.
+yang memiliki persediaan tinggi menuju
+wilayah dengan permintaan meningkat.
 
 </p>
 
 <button
+
 id="btnSetuju"
-class="btn btn-primary">
+
+class="btn btn-primary mt-3">
 
 Lihat Rekomendasi
 
@@ -551,34 +633,40 @@ Lihat Rekomendasi
 
 </div>
 
+</div>
+
 </section>
+<footer id="kontak" class="py-5 mt-5 bg-light">
 
-<!-- ================= FOOTER ================= -->
+<div class="container text-center">
 
-<footer class="py-4 text-center">
+<h5 class="fw-bold">
 
-<div class="container">
+Sistem Informasi Pemantauan Inflasi Papua Barat
 
-<p class="mb-0">
+</h5>
 
-© 2026 Sistem Informasi Pemantauan Inflasi Papua Barat
+<p class="text-muted">
+
+Prototipe untuk mendukung pengambilan keputusan
+berdasarkan data pemantauan inflasi.
 
 </p>
 
-<small class="text-muted">
+<hr>
 
-Dikembangkan sebagai prototipe untuk kompetisi inovasi pengendalian inflasi.
+<p class="small text-secondary">
 
-</small>
+© 2026 Tim PAPUA INFLASI
+
+</p>
 
 </div>
 
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="js/app.js"></script>
 
 </body>
-
 </html>

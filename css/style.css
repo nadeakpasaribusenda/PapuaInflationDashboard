@@ -1,45 +1,293 @@
-body {
-  background-color: #f4f6f9;
+/* ==============================
+   FONT
+============================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f8fc;
+    color:#2d3748;
 }
 
-.chart-svg {
-  width: 100%;
-  height: 90px;
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar{
+
+    padding:18px 0;
+
+    background:white !important;
+
 }
 
-.line-actual {
-  fill: none;
-  stroke: #378ADD;
-  stroke-width: 2;
+.navbar-brand{
+
+    font-size:24px;
+    font-weight:700;
+
 }
 
-.line-prediksi {
-  fill: none;
-  stroke: #D85A30;
-  stroke-width: 2;
-  stroke-dasharray: 4, 3;
+.nav-link{
+
+    margin-left:18px;
+
+    font-weight:500;
+
+    color:#444 !important;
+
 }
 
-.badge-aman {
-  background-color: #d1e7dd;
-  color: #0f5132;
+.nav-link:hover{
+
+    color:#0d6efd !important;
+
 }
 
-.badge-waspada {
-  background-color: #fff3cd;
-  color: #664d03;
+/* ==============================
+   HERO
+============================== */
+
+.hero{
+
+    padding:90px 0;
+
+    background:
+    linear-gradient(
+    135deg,
+    #e8f4ff,
+    #ffffff);
+
 }
 
-.badge-kritis {
-  background-color: #f8d7da;
-  color: #842029;
+.hero h1{
+
+    line-height:1.3;
+
 }
 
-.card {
-  border: none;
-  border-radius: 12px;
+.hero p{
+
+    font-size:18px;
+
 }
 
-.card h2 {
-  font-weight: 600;
+.hero img{
+
+    max-width:95%;
+
+}
+
+/* ==============================
+   HERO CARD
+============================== */
+
+.hero-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.hero-card h3{
+
+    font-weight:700;
+
+    color:#0d6efd;
+
+}
+
+.hero-card p{
+
+    margin-bottom:0;
+
+    color:#666;
+
+}
+
+/* ==============================
+   SECTION
+============================== */
+
+section{
+
+    padding-top:80px;
+    padding-bottom:80px;
+
+}
+
+/* ==============================
+   CARD
+============================== */
+
+.card{
+
+    border-radius:22px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+/* ==============================
+   ICON
+============================== */
+
+.icon-box{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+}
+
+/* ==============================
+   RINGKASAN
+============================== */
+
+.ringkasan-card h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.ringkasan-card small{
+
+    font-size:15px;
+
+}
+
+/* ==============================
+   SVG
+============================== */
+
+.chart-svg{
+
+    width:100%;
+
+    height:240px;
+
+}
+
+/* garis utama */
+
+.line-actual{
+
+    fill:none;
+
+    stroke:#0d6efd;
+
+    stroke-width:4;
+
+}
+
+/* garis prediksi */
+
+.line-prediksi{
+
+    fill:none;
+
+    stroke:#ff6b6b;
+
+    stroke-width:4;
+
+    stroke-dasharray:10;
+
+}
+
+/* ==============================
+   BUTTON
+============================== */
+
+.btn{
+
+    border-radius:14px;
+
+    padding:12px 28px;
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:#0d6efd;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#0b5ed7;
+
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+
+    background:white;
+
+}
+
+footer h5{
+
+    font-weight:700;
+
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media(max-width:768px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero img{
+
+margin-top:40px;
+
+}
+
+.nav-link{
+
+margin-left:0;
+
+}
+
 }
